@@ -28,7 +28,7 @@ export const App = () => {
   const onClickBack = (index) => {
     const newCompleteTodos = [...completeTodos];
     newCompleteTodos.splice(index, 1);
-    const newInCompleteTodos = [...incompleteTodos, completeTodos(index)];
+    const newInCompleteTodos = [...incompleteTodos, completeTodos[index]];
     setConpleteTodos(newCompleteTodos);
     setIncompleteTodos(newInCompleteTodos);
   };
